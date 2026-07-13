@@ -1,12 +1,15 @@
-
 *{
     margin: 0;
     padding: 0;
-       box-sizing: border-box;
+    box-sizing: border-box;
 }
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  color: #111;
+}
 
-/* Navbar */
 nav{
     display: flex;
     justify-content: space-between;
@@ -33,18 +36,20 @@ nav ul li a {
     color: #575757;
     font-weight: 500;
 }
-/* Common Button */
+
 .common-button{
-   background-color: #1D4ED8;
-    padding: 5px 25px;
+    background-color: #1D4ED8;
     padding: 10px 20px;
-        color: white;
-          border: none;
-          font-weight: bold;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
 }
-/* stat hero section */
+
 .parent{
-    background-image: linear-gradient(rgba(19, 16, 16, 0.6), rgba(13, 13, 13, 0.6)), url('./banner.jpg');
+    background-image: linear-gradient(rgba(19, 16, 16, 0.6), rgba(13, 13, 13, 0.6)), url('assets/banner.jpg');
     min-height: 550px;
     width: 100%;
     background-size: cover;
@@ -83,9 +88,6 @@ nav ul li a {
     text-align: center;
     margin-top: 24px;
 }
-/*speaker section*/
-
-    /* Speaker Section */
 
 .speakers{
     width: 90%;
@@ -93,53 +95,20 @@ nav ul li a {
     margin: 60px auto;
 }
 
-
-/* Section Heading */
-
 .speakers h2{
     text-align: center;
     font-size: 40px;
+    font-weight: 700;
     padding-bottom: 40px;
+    color: #111;
 }
 
-
-/* Speaker Cards Container */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: #fff;
-}
-
-/* Section */
-.speakers {
-  width: 90%;
-  max-width: 1200px;
-  margin: 60px auto;
-}
-
-/* Heading */
-.speakers h2 {
-  text-align: center;
-  font-size: 40px;
-  font-weight: 700;
-  padding-bottom: 40px;
-  color: #111;
-}
-
-/* Grid */
 .speaker-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
-/* Card */
 .speaker-card {
   border: 1px solid rgb(202, 201, 201);
   border-radius: 10px;
@@ -148,7 +117,6 @@ body {
   flex-direction: column;
 }
 
-/* Image */
 .speaker-card img {
   width: 100%;
   height: 220px;
@@ -157,12 +125,10 @@ body {
   display: block;
 }
 
-/* Info Block */
 .speaker-info {
   padding: 16px 20px 20px;
 }
 
-/* Category */
 .speaker-info span {
   color: #2563eb;
   font-size: 11px;
@@ -171,7 +137,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Name */
 .speaker-info h4 {
   font-size: 18px;
   font-weight: 700;
@@ -179,160 +144,11 @@ body {
   color: #111;
 }
 
-/* Role */
 .speaker-info p {
   color: rgb(100, 100, 100);
   font-size: 13px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    gap: 12px;
-    padding: 20px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .speaker-content {
-    grid-template-columns: 1fr;
-  }
-
-  .speakers h2 {
-    font-size: 28px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-}
-
-
-/* payment section */
-
-/*
-.payment-cards span{
-    color: rgb(100, 100, 100);
-    padding: 5px 15px;
-}
-.payment p{
-    text-align: center;
-}
-
-.line1 {
-    width: 97%;
-    height: 1px;
-    background-color: rgb(100, 100, 100);
-    margin: 20px 0;
-}
-.line2 {
-    width: 97%;
-    height: 1px;
-    background-color: rgb(100, 100, 100);
-    margin: 20px 0;
-}
-.line3 {
-    width: 97%;
-    height: 1px;
-    background-color: rgb(100, 100, 100);
-    margin: 20px 0;
-}
-.payment-cards{
-    display: flex;
-    justify-content: center;
-    padding: 20px 5px;
-    gap: 15px;
-}
-.part1{
-    width:200px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    padding:30px;
-    display:flex;
-    flex-direction:column;
-}
-
-.part2{
-    color: white;
-    width:200px;
-    background: #0D1B2A;
-    border:1px solid white;
-    border-radius:12px;
-    padding:30px;
-    display:flex;
-    flex-direction:column;
-}
-.part3{
-    width:200px;
-    border:1px solid #ddd;
-    border-radius:12px;
-    padding:30px;
-    display:flex;
-    flex-direction:column;
-}
-
-.payment-cards li{
-    font-weight: 95;
-    font-size: 12px;
-}
-
-.payment-cards .part2 li{
-    font-weight: 95;
-    font-size: 12px;
-}
-
-.common-button-standerd{
-    background-color: white;
-    padding: 5px 55px;
-    border-radius: 8px;
-    border-color: rgb(106, 106, 253);
-}
-
-.common-button-standerd2{
-    background-color: white;
-    padding: 5px 55px;
-    border-radius: 8px;
-}
-.common-button-standerd3{
-    background-color: #2563EB;
-    padding: 5px 70px;
-    border-radius: 8px;
-    border: none;
-}
-.part1 li,
-.part2 li,
-.part3 li{
-    margin-bottom: 8px;
-    line-height: 1.5;
-    padding-bottom: 8px;
-}
-
-.part2, .common-button-standerd3{
-color: #e0dfdf;
-font-weight: bold;
-}
-.part2 span{
-    color: #60A5FA;
-    font-weight: 600;
-}
-.common-button-standerd,.common-button-standerd2,.common-button-standerd3{
-    cursor: pointer;
-}
-button:active{
-    background-color: rgb(86, 86, 113);
-}
-.hero-button button{
-    padding: 17px 55px;
-}
-*/
-/* Payment Section */
-
-
-/* ── Payment Section ── */
 .payment {
   width: 90%;
   max-width: 1100px;
@@ -353,7 +169,6 @@ button:active{
   margin-bottom: 40px;
 }
 
-/* ── Cards Row ── */
 .payment-cards {
   display: flex;
   justify-content: center;
@@ -362,7 +177,6 @@ button:active{
   flex-wrap: wrap;
 }
 
-/* ── Base Card ── */
 .part1,
 .part2,
 .part3 {
@@ -372,7 +186,6 @@ button:active{
   display: flex;
   flex-direction: column;
   text-align: left;
-  box-sizing: border-box;
 }
 
 .part1 {
@@ -391,7 +204,6 @@ button:active{
   background: #fff;
 }
 
-/* ── Category Label ── */
 .category {
   font-size: 11px;
   font-weight: 700;
@@ -399,7 +211,6 @@ button:active{
   text-transform: uppercase;
   margin-bottom: 10px;
   display: block;
-  padding: 0;
 }
 
 .part1 .category,
@@ -411,7 +222,6 @@ button:active{
   color: #60A5FA;
 }
 
-/* ── Price ── */
 .price {
   font-size: 42px;
   font-weight: 800;
@@ -424,20 +234,17 @@ button:active{
   color: #fff;
 }
 
-/* ── Per person ── */
 .per {
   font-size: 13px;
   color: #888;
   margin-bottom: 22px;
   display: block;
-  padding: 0;
 }
 
 .part2 .per {
   color: #aaa;
 }
 
-/* ── Divider ── */
 .divider {
   width: 100%;
   height: 1px;
@@ -449,7 +256,6 @@ button:active{
   background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* ── List ── */
 .payment-cards ul {
   list-style: none;
   margin-bottom: 28px;
@@ -485,12 +291,10 @@ button:active{
   color: #60A5FA;
 }
 
-/* ── Button Position ── */
 .button-position {
   margin-top: auto;
 }
 
-/* ── Buttons ── */
 .btn {
   width: 100%;
   padding: 13px 0;
@@ -507,70 +311,10 @@ button:active{
   color: #2563EB;
 }
 
-.btn-standard:hover {
-  background: #eff6ff;
-}
-
 .btn-pro {
   background: #2563EB;
   border: none;
   color: #fff;
-}
-
-.btn-pro:hover {
-  background: #1d4ed8;
-}
-
-.btn-team {
-  background: #fff;
-  border: 1.5px solid #ccc;
-  color: #111;
-}
-
-.btn-team:hover {
-  background: #f5f5f5;
-}
-
-/* ── Responsive ── */
-@media (max-width: 768px) {
-  .payment-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .part1,
-  .part2,
-  .part3 {
-    width: 100%;
-    max-width: 360px;
-  }
-
-  .payment h2 {
-    font-size: 28px;
-  }
-}
-
-/* ── Team (Payment card 3) polish ── */
-.part3-team {
-  border: 1px solid rgba(37, 99, 235, 0.25);
-  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
-  position: relative;
-}
-
-.part3-team::after {
-  content: "";
-  position: absolute;
-  inset: -1px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(96, 165, 250, 0.08));
-  opacity: 0.7;
-  pointer-events: none;
-  z-index: -1;
-}
-
-.part3-team:hover {
-  transform: translateY(-2px);
-  transition: transform 0.2s ease;
 }
 
 .btn-team {
@@ -579,13 +323,6 @@ button:active{
   color: #111;
 }
 
-.btn-team:hover {
-  background: #eff6ff;
-  color: #1d4ed8;
-  border-color: #1d4ed8;
-}
-
-/* ── Footer ── */
 footer {
   padding: 44px 0;
   background: #0b1220;
@@ -603,20 +340,11 @@ footer {
   justify-content: space-between;
 }
 
-.footer-brand {
-  min-width: 260px;
-}
-
 .footer-brand p a,
 .foot p a,
 .join-team a {
   color: inherit;
   text-decoration: none;
-}
-
-.footer-brand p a:hover,
-.foot p a:hover {
-  text-decoration: underline;
 }
 
 .footer-tagline {
@@ -663,12 +391,27 @@ footer {
   color: #fff;
   font-weight: 700;
   text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.join-team-btn:hover {
-  background: #1d4ed8;
-  transform: translateY(-1px);
+.join-page {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+}
+
+.join-page h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.join-page p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 24px;
+  line-height: 1.7;
 }
 
 @media (max-width: 900px) {
@@ -676,28 +419,41 @@ footer {
     flex-direction: column;
     gap: 18px;
   }
+}
 
-  .footer-brand {
-    min-width: auto;
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
   }
 
-  .join-team {
-    max-width: none;
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
   }
-}
 
+  .speaker-content {
+    grid-template-columns: 1fr;
+  }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: #0D1B2A;
-    padding: 30px;
-}
-footer a{
-    text-decoration: none;
-    color: #b1b1b1;
-    font-size: 12px;
-}
-.foot{
-    display: flex;
+  .speakers h2 {
+    font-size: 28px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .payment-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .part1,
+  .part2,
+  .part3 {
+    width: 100%;
+    max-width: 360px;
+  }
 }
